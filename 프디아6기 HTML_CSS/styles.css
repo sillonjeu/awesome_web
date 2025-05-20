@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #1f1f3f;
+    background-color: #fff;
+    line-height: 1.6;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: white;
+  }
+  .logo {
+    font-weight: 800;
+    font-size: 20px;
+  }
+  .logo span {
+    color: #cc00cc;
+    font-weight: 600;
+  }
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+  .nav-links li a {
+    font-weight: 500;
+  }
+  .social-icons a img {
+    width: 20px;
+    margin-left: 10px;
+  }
+  
+  /* Hero */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .highlight {
+    color: #5c3ef8;
+  }
+  .intro-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #5c3ef8;
+  }
+  
+  /* Tech Stack */
+  .tech-stack {
+    text-align: center;
+    padding: 80px 10%;
+  }
+  .tech-stack h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  .stack-icons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .stack-icons img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Projects */
+  .projects {
+    text-align: center;
+    padding: 80px 10%;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .project-card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+  }
+  .project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .project-content {
+    padding: 15px;
+    background: #fff;
+  }
+  .project-content h3 {
+    margin-bottom: 10px;
+  }
+  .project-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+  
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10%;
+    background-color: #fafafa;
+    font-size: 0.9rem;
+  }
+  .footer-left .logo {
+    margin-bottom: 10px;
+  }
+  .footer-right .social-icons a img {
+    width: 18px;
+    margin-right: 10px;
+  }
