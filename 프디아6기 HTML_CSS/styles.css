@@ -130,10 +130,24 @@
     background-color: #fafafa;
     font-size: 0.9rem;
   }
-  .footer-left .logo {
-    margin-bottom: 10px;
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
-  .footer-right .social-icons a img {
-    width: 18px;
-    margin-right: 10px;
+  
+  .footer-right {
+    display: flex;
+    align-items: center;  /* 수직 중앙 정렬 */
+    gap: 30px;            /* 요소 사이 간격 */
+  }
+  
+  .footer-right p {
+    margin: 0;
+  }
+  
+  .footer-right .social-icons {
+    display: flex;
+    align-items: center;
   }
