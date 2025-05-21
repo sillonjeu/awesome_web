@@ -112,6 +112,16 @@
     height: 120px;
     object-fit: contain;
   }
+  .tech-used .label {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #222;
+  }
+  .tech-used .stack-list {
+    font-weight: 300;
+    font-size: 0.95rem;
+    color: #5e5e5e;
+  }
   
   /* Projects */
   .projects h1 {
@@ -131,7 +141,7 @@
   }
   .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(260px, 23.5%, 376px), 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(clamp(260px, 23.5%, 376px), 1fr));
     gap: 30px;
     margin-top: 40px;
     max-width: 100%;
@@ -142,6 +152,9 @@
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     overflow: hidden;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 30px 30px #D9D9D9;
   }
   .project-card img {
     width: 100%;
@@ -172,7 +185,7 @@
     align-items: center;
     font-size: 0.95rem;
     gap: 12px;
-    margin-bottom: clamp(24px, 1vh, 100px);
+    margin: clamp(24px, 1vh, 100px) clamp(6px, 0.5vh, 100px);
   }
   .project-links a {
     display: flex;
@@ -193,30 +206,74 @@
   
   /* Footer */
   .footer {
+    padding: 40px 10%;
+    font-size: 0.9rem;
+  }
+  
+  .footer-top {
     display: flex;
     justify-content: space-between;
-    padding: 40px 10%;
-    background-color: #fafafa;
-    font-size: 0.9rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
   }
   
   .footer-left {
     display: flex;
     flex-direction: column;
-    gap: 10px;
   }
   
   .footer-right {
     display: flex;
-    align-items: center;  /* 수직 중앙 정렬 */
-    gap: 30px;            /* 요소 사이 간격 */
+    flex-direction: row;
+    align-items: center; 
+    gap: clamp(8px, 5.5vw, 100px);
   }
   
   .footer-right p {
     margin: 0;
+    color: #A7A7A7;
   }
   
   .footer-right .social-icons {
     display: flex;
     align-items: center;
+  }
+  
+  .footer-line {
+    margin: 30px 0;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 10px;
+    color: #999;
+  }
+  
+  .footer-bottom-left {
+    display: flex;
+    flex-direction: row;  
+    gap: clamp(8px, 3vw, 50px)             
+  }
+
+  .footer-bottom-left p {
+    color: #A7A7A7
+  }
+
+  .footer-bottom-right p {
+    color: #A7A7A7;  /* 기본 회색 텍스트 */
+    margin: 0;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(to right, #13B0F5, #E70FAA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
   }
