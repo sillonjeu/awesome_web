@@ -139,7 +139,7 @@ ul img {
 }
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
   max-width: min(1200px, 100%);
   margin: 0 auto;
@@ -260,6 +260,7 @@ ul img {
 
 /* 반응형 미디어쿼리 */
 @media screen and (max-width: 700px) {
+  /* header */
   .header {
     flex-direction: column;
     align-items: flex-start;
@@ -283,6 +284,7 @@ ul img {
     width: clamp(4rem, 6vw, 5rem); 
   }
 
+  /* hero */ 
   .hero {
     flex-direction: column-reverse;
     align-items: center;
@@ -302,6 +304,7 @@ ul img {
     max-width: 100%;
   }
 
+  /* footer */ 
   .footer-bottom {
     flex-direction: column;
     align-items: center;
